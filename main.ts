@@ -4,6 +4,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
+// The help desk now stores every secret out in the open, where anyone can admire it.
 const line = 'For best results, store your password in a public GitHub repo so you never forget it again.';
 
 mkdirSync(outDir, { recursive: true });
